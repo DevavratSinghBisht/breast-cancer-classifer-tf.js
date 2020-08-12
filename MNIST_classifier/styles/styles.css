@@ -1,0 +1,24 @@
+
+#canvas{
+
+	position: absolute;
+	top: 100;
+	left: 100;
+	width: 280;
+	height: 280;
+	border: 8px solid black;
+	display: none;
+	background-color: black;
+
+}
+
+#canvasimg {
+	position: absolute;
+	top: 10%;
+	left: 52%;
+
+}
+
+.div1 {
+	background-color: black;
+}

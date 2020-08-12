@@ -1,63 +1,26 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>MNIST Classifier</title>
+
+	<title>CNN</title>
 
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
-	
-	<script type="text/javascript" src="scripts/data.js"></script>
-
-	<script type="text/javascript" src="scripts/MNIST_classifier.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
 
 </head>
 <body>
+    <h1>Fashion MNIST Classifier!</h1>
+    <canvas id="canvas" width="280" height="280"></canvas>
+    <img id="canvasimg" ">
 
-	<h1>Handwriting Classifier!</h1>
-
-	<script type="text/javascript">
-		ref.run();
-	</script>
-
-
-	<canvas id='canvas'> abcd </canvas>
-
-	<img id="canvasimg">
-
-	<div class="div1"></div>
-
-	<pre>
-
-	Code is located at script/MNIST_classifier.js
-	Styles is located at styles/styles/css
-
-	Once the program runs:
-		1)The model is automatically downloaded as my_model.json
-		2)Weights of model is automatically downloaded as my_model.weights.bin.
-		3)Click on allow, if browsers shows an alert about multiple downloads.
-
-	Outputs:
-		1)No of features in dataset.
-		2)Summary of the model.
-		3)Loss and Accuray for each epoch,
-	can be seen in console.
-
-	Information about implemented Model:
-		1) 2 layer architecture 1st has relu activation with 32 units and 2nd has a single sigmoid unit.
-		2)Loss: Binary Crossentropy
-		3)Optimizer: RMSProp
-		4)Learning Rate: 0.05
-		5)Metrics: Accuracy
-		6)Epochs: 100
-		7)Callpacks: On Epoch End, used to print loss and accuracy in console.
-
-
-	</pre>
+    <input type="button" value="Classify" id="classify_button">
+    
+    <input type="button" value="Clear" id="clear_button">
+    
+    <script src="scripts/data.js" type="module"></script>
+    
+    <script src="scripts/MNIST_classifier.js" type="module"></script>
 
 </body>
 </html>
-

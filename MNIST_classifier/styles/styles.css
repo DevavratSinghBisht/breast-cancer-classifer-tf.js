@@ -1,24 +1,39 @@
 
 #canvas{
 
-	position: absolute;
-	top: 100;
-	left: 100;
-	width: 280;
-	height: 280;
-	border: 8px solid black;
-	display: none;
-	background-color: black;
+	position:absolute;
+	top:100;
+	left:100;
+	border:8px solid;
+	width: 280px;
+	height: 280px;
 
 }
 
 #canvasimg {
+
 	position: absolute;
-	top: 10%;
-	left: 52%;
+	top:10%;
+	left:52%;
+	width: 280px;
+	height: 280px;
+	display:none;
+}
+
+#classify_button {
+
+	position:absolute;
+	top: 400px;
+	left: 100px;
+	size: 48px;
 
 }
 
-.div1 {
-	background-color: black;
+#clear_button {
+
+	position:absolute;
+	top: 400px;
+	left: 180px;
+	size: 23px;
+
 }

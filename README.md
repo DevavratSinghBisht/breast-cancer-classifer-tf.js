@@ -24,3 +24,7 @@
 		5)Metrics: Accuracy
 		6)Epochs: 100
 		7)Callpacks: On Epoch End, used to print loss and accuracy in console.
+		
+## 2) Fashion MNIST Classifier
+	
+	Runs fine for some time and then the WebGl context is lost.
